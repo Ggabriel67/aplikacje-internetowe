@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #fff6e9 0%, #ffe8cc 50%, #ffd4a3 100%);
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffecd1;
+  color: #333;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #c04c00;
+  border-bottom: 2px solid #ffe0b3;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #444;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+ul, ol {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  flex-direction: column; 
+  text-align: center;     
+  background-color: #ffecd1;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 40px;
+  border-top: 2px solid #f4d6a0;
+  width: 100%;           
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: linear-gradient(160deg, #fff6e9 0%, #ffe1b3 60%);
+    background-size: 200% 200%;
+    background-position: right top;
+  }
+  
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 20px 15px;
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p, li {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+
+  footer {
+    font-size: 0.85em;
+    padding: 15px 10px;
+  }
+}
