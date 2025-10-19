@@ -41,7 +41,7 @@ body {
 .task-form {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 100%;
 }
 
@@ -75,4 +75,99 @@ body {
 
 .task-form button:hover {
   background-color: oklch(62.7% 0.265 303.9 / 0.85);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  border: 1px solid oklch(70.7% 0.022 261.325);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.task-item:hover {
+  background-color: #3d3d3d;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.task-item span:nth-child(2) {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-item span:nth-child(3) {
+  color: oklch(80% 0.02 261.325);
+  font-size: 0.9em;
+  margin-right: 15px;
+}
+
+.task-item button {
+  background: none;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.task-item button:hover {
+  color: #ff8080;
+}
+
+.task-item .edit-text,
+.task-item .edit-date {
+  flex: 1;
+  background-color: #3a3a3a;
+  border: 2px solid oklch(70.7% 0.022 261.325);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.task-item .edit-text:focus,
+.task-item .edit-date:focus {
+  border-color: oklch(62.7% 0.265 303.9);
+  box-shadow: 0 0 1px 1px oklch(62.7% 0.265 303.9);
+}
+
+.task-item .edit-save {
+  background-color: oklch(62.7% 0.265 303.9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-item .edit-save:hover {
+  background-color: oklch(62.7% 0.265 303.9 / 0.85);
+}
+
+mark {
+  background-color: oklch(62.7% 0.265 303.9 / 0.5);
+  color: white;
+  border-radius: 3px;
+  padding: 0 2px;
 }
