@@ -1,0 +1,78 @@
+body {
+  background-color: #1a1a1a;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+	margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  background-color: #222;
+  border: 3px solid oklch(62.7% 0.265 303.9);
+  border-radius: 10px;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0 0 20px rgba(120, 0, 255, 0.2);
+}
+
+.searchbar {
+  background-color: #3a3a3a;
+  border: 2px solid oklch(70.7% 0.022 261.325);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchbar:focus {
+  border-color: oklch(62.7% 0.265 303.9);
+  box-shadow: 0 0 1px 1px oklch(62.7% 0.265 303.9);
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.task-form input[type="text"],
+.task-form input[type="date"] {
+  flex: 1;
+  background-color: #3a3a3a;
+  border: 2px solid oklch(70.7% 0.022 261.325);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.task-form input[type="text"]:focus,
+.task-form input[type="date"]:focus {
+  border-color: oklch(62.7% 0.265 303.9);
+  box-shadow: 0 0 1px 1px oklch(62.7% 0.265 303.9);
+}
+
+.task-form button {
+  background-color: oklch(62.7% 0.265 303.9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: oklch(62.7% 0.265 303.9 / 0.85);
+}
