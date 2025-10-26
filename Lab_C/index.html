@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzlet.js</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <div id="top-row">
+      <div id="map-section">
+        <div id="map"></div>
+        <div id="controls">
+          <button id="loadLocation">Moja lokalizacja</button>
+          <button id="saveMap">Pobierz mapę</button>
+        </div>
+      </div>
+
+      <div id="puzzle-section">
+        <div id="puzzle"></div>
+      </div>
+    </div>
+
+		<!-- <canvas id="raster"></canvas> -->
+    <div id="fragments"></div>
+  </div>
+	
+	<script src="script.js"></script>
+</body>
+</html>

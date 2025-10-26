@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f6f6f6;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#top-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+#map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#map {
+  width: 900px;
+  height: 616px;
+  border: 2px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+#controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background-color: #0056b3;
+}
+
+#puzzle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #333;
+  overflow: hidden;
+}
+
+td {
+  background-color: #fff;
+  width: 225px;
+  height: 154px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #333;
+}
+
+#grid td img.fragment {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#fragments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+#fragments img.piece {
+  cursor: grab;
+}
+
+#fragments img.fragment:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+#raster{
+  width: 900px;
+  height: 616px; 
+  border: 1px solid black;   
+}
